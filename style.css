@@ -1,0 +1,415 @@
+/* ******************Header****************** */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  /* for making header stickey */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+/* ******************Navigation**************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-link-cta:link,
+.main-nav-link.nav-link-cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #cf711f;
+  border-radius: 9px;
+}
+/* *********** Hero Section*********** */
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  /* adding padding here to get space when screen is smaller */
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-img {
+  width: 100%;
+}
+.text-box-hero {
+  color: #333;
+}
+
+.description-hero {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.delivered-meals {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  border-radius: 50%;
+  height: 4.8rem;
+  width: 4.8rem;
+  border: 3px solid #fff;
+  margin-right: -1.6rem;
+}
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.number-delivered {
+  color: #cf711f;
+}
+/*****************Featured In Section******************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.75px;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* ******************How To Section****************** */
+.section-how {
+  padding: 9.6rem 0;
+  /* background-color: tomato; */
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.step-img-box::before {
+  z-index: -2;
+  width: 60%;
+  /* height doesn't work here */
+  /* height: 60%; */
+  /* instead of height I'm gonna use padding trick */
+  padding-bottom: 60%;
+}
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+.step-img {
+  width: 35%;
+}
+.step-number {
+  font-size: 8.6rem;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/*****************Meals Section******************/
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+.tag-meals {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 4px;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  /* it moves cards to up */
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.content-meal {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+}
+.tag--vegetarian {
+  background-color: #37b24d;
+}
+
+.tag--vegan {
+  background-color: #74b816;
+}
+
+.tag--paleo {
+  background-color: #ffe066;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.meal-icon {
+  color: #e67e22;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* ******************** Testemonials Section***************** */
+
+.section-testemonials {
+  background-color: #fdf2e9;
+  display: grid;
+  /* we used fr as percetage */
+  grid-template-columns: 55fr 45fr;
+}
+.testemonial-container {
+  padding: 9.6rem;
+}
+.testemonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testemonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testemonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testemonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/*****************Pricing Section******************/
+.pricing-section {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  border-radius: 11px;
+  padding: 4.8rem;
+  width: 75%;
+}
+.pricing-plan-starter {
+  justify-self: end;
+  border: 3px solid #fdf2e9;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan-complete::after {
+  content: "Best value";
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  transform: rotate(45deg);
+  padding: 0.8rem 8rem;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 0.75;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+  font-weight: 500;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.sign-up-pricing {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.feature-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 3.2rem;
+  color: #cf711f;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+
+  /* temp */
+  height: 50rem;
+  overflow: hidden;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(28, 80%, 61%, 0.35),
+      hsla(28, 80%, 52%, 0.35)
+    ),
+    url(../content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}

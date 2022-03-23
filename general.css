@@ -1,0 +1,195 @@
+/* 
+
+ - typography:
+
+ - Font-size system --> 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 (px);
+ - Spacing System --> 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 (px);
+
+ - line-height (Default) : 1
+ 1.05 , 
+ pargraph-space: 1.5
+ - font-weight: 400
+ 500
+ semi-bold: 600
+ bold:700
+
+ - colors:
+
+ - primary: #e67e22
+ - tints: #fdf2e9
+ - shades: #cf711f
+ - accents: 
+ - greys: #555 #333 #6f6f6f
+
+ - shadows: box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+ - border-radius:
+ default:9px
+
+
+
+*/
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/************* General Reusable Components *************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-center-v {
+  align-items: center;
+}
+.primary-heading,
+.heading-secondary,
+.heading-tertiary {
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  color: #333;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.primary-heading {
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  /* color: #45260a; */
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.subheading {
+  display: block;
+  letter-spacing: 0.75px;
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 9px;
+  font-weight: 700;
+  display: inline-block;
+  /* add transition to original state */
+  transition: all 0.3s;
+}
+.btn--first:link,
+.btn--first:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--second:link,
+.btn--second:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--first:hover,
+.btn--first:active {
+  background-color: #cf711f;
+}
+
+.btn--second:hover,
+.btn--second:active {
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  /* trick for having border inside box */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* for hovering on a link and don't have any jumping while hovering use from bottom trick   */
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.icon-item {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* helper classes // settings */
+
+.margin-right-btn {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.all-recepies {
+  text-align: center;
+  font-size: 1.8rem;
+}
+strong {
+  font-weight: 500;
+}
+.center-text {
+  text-align: center;
+}

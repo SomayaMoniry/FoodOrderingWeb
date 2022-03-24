@@ -17,7 +17,7 @@
 
  - primary: #e67e22
  - tints: #fdf2e9
- - shades: #cf711f
+ - shades: #cf711f #45260a
  - accents: 
  - greys: #555 #333 #6f6f6f
 
@@ -107,6 +107,13 @@ body {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
 }
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 0.8rem; */
+  box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.5);
+}
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -115,8 +122,21 @@ body {
   border-radius: 9px;
   font-weight: 700;
   display: inline-block;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
   /* add transition to original state */
   transition: all 0.3s;
+}
+.btn--form {
+  color: #fdf2e9;
+  background-color: #45260a;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 .btn--first:link,
 .btn--first:visited {

@@ -284,7 +284,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
-  padding: 1.6rem;
+  padding: 1.2rem;
+  margin-top: 8rem;
+  align-items: end;
 }
 .gallery-item {
   overflow: hidden;
@@ -390,7 +392,7 @@
 }
 /*****************Form Section******************/
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 .cta {
   display: grid;
@@ -403,10 +405,10 @@
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
-      hsla(28, 80%, 61%, 0.205),
-      hsla(28, 80%, 52%, 0.267)
+      hsla(28, 80%, 61%, 0.35),
+      hsla(28, 80%, 52%, 0.35)
     ),
-    url(../Omnifood/img/eating.jpg);
+    url(./img/eating.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -454,4 +456,72 @@ select {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem hsla(27, 83%, 95%, 0.5);
+}
+
+/*****************Footer Section******************/
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-link {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #767676;
+}
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: auto;
+  color: #767676;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  margin-bottom: 4rem;
+}
+
+.footer-na {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+.footer-link {
+  font-style: normal;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1.2rem;
+}
+.address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
 }

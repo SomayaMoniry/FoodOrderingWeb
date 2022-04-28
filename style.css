@@ -49,6 +49,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -103,6 +104,7 @@
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
+  margin-top: 4.8rem !important;
 }
 .heading-featured-in {
   font-size: 1.4rem;

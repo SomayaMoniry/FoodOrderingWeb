@@ -30,7 +30,9 @@
 
 */
 html {
-  /* font-size: 10px; */
+  /* font-size: 10px;
+  10px / 16px = 62.5%
+  */
   font-size: 62.5%;
 }
 * {

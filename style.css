@@ -45,6 +45,23 @@
   background-color: #cf711f;
   border-radius: 9px;
 }
+
+/* ******************Mobile****************** */
+.btn-movile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-movile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+.icon-movile-nav[name="close"] {
+  display: none;
+}
+
 /* *********** Hero Section*********** */
 .hero-section {
   background-color: #fdf2e9;

@@ -93,7 +93,7 @@
     margin-top: 1.2rem;
   }
   /* Mobile Navigation */
-  .btn-movile-nav {
+  .btn-mobile-nav {
     display: block;
   }
   .main-nav {
@@ -108,7 +108,7 @@
     align-items: center;
     transition: all 0.5s;
 
-    /* hiding Navigation without using display:none */
+    /* hiding Navigation without using display:none (transtion doesn't work for display) */
     /*1-hide it visually  */
 
     opacity: 0;
@@ -125,7 +125,14 @@
     pointer-events: auto;
     visibility: visible;
   }
-  .main-nav-list {
+
+  .show-nav .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+  .show-nav .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+  .show-nav .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
   }

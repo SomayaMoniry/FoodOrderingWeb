@@ -47,18 +47,18 @@
 }
 
 /* ******************Mobile****************** */
-.btn-movile-nav {
+.btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
   display: none;
 }
-.icon-movile-nav {
+.icon-mobile-nav {
   width: 4.8rem;
   height: 4.8rem;
   color: #333;
 }
-.icon-movile-nav[name="close"] {
+.icon-mobile-nav[name="close"] {
   display: none;
 }
 

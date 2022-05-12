@@ -176,4 +176,9 @@
   .logo--footer {
     margin-top: 0;
   }
+
+  /* Bellow 704px (smaller tablests) */
+
+  @media (max-width: 34em) {
+  }
 }

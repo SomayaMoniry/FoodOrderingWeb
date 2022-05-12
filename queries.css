@@ -106,8 +106,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s;
+
+    /* hiding Navigation without using display:none */
+    /*1-hide it visually  */
+
+    opacity: 0;
+
+    /* 2-Make it unaccessible from mouse and keyboard */
+    pointer-events: none;
+
+    /*3-Hide it from screen readers  */
+    visibility: hidden;
   }
 
+  .show-nav .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;

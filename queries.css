@@ -143,3 +143,12 @@
     font-size: 3rem;
   }
 }
+
+/* Bellow 704px (smaller tablests) */
+
+@media (max-width: 44em) {
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

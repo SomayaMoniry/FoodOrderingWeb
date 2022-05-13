@@ -1,5 +1,4 @@
 "strict mode";
-console.log("hello");
 
 // current date
 const year = document.querySelector(".year");
